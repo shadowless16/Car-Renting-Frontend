@@ -3,76 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Rental Service</title>
+    <title>LuxDrive Rentals</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#renting">Rent a Car</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#signin">Sign In</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class="logo">LuxDrive</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#renting">Rent a Car</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#signin">Sign In</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="home">
-        <h1>Welcome to Car Rental Service</h1>
-        <p>Find the best deals for your car rental needs!</p>
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h2>Your Journey Starts Here</h2>
+            <p>Premium car rentals at unbeatable prices.</p>
+            <a href="#renting" class="btn-primary">Get Started</a>
+        </div>
     </section>
 
-    <section id="renting">
-        <h2>Rent a Car</h2>
-        <form>
-            <label for="pickup">Pick-up Location:</label>
-            <input type="text" id="pickup" name="pickup" required>
+    <section id="renting" class="renting-section">
+        <div class="container">
+            <h2>Find Your Perfect Ride</h2>
+            <form>
+                <div class="form-group">
+                    <label for="pickup">Pick-up Location:</label>
+                    <input type="text" id="pickup" name="pickup" required>
+                </div>
 
-            <label for="dropoff">Drop-off Location:</label>
-            <input type="text" id="dropoff" name="dropoff" required>
+                <div class="form-group">
+                    <label for="dropoff">Drop-off Location:</label>
+                    <input type="text" id="dropoff" name="dropoff" required>
+                </div>
 
-            <label for="pickupdate">Pick-up Date:</label>
-            <input type="date" id="pickupdate" name="pickupdate" required>
+                <div class="form-group">
+                    <label for="pickupdate">Pick-up Date:</label>
+                    <input type="date" id="pickupdate" name="pickupdate" required>
+                </div>
 
-            <label for="dropoffdate">Drop-off Date:</label>
-            <input type="date" id="dropoffdate" name="dropoffdate" required>
+                <div class="form-group">
+                    <label for="dropoffdate">Drop-off Date:</label>
+                    <input type="date" id="dropoffdate" name="dropoffdate" required>
+                </div>
 
-            <button type="submit">Search Cars</button>
-        </form>
+                <button type="submit" class="btn-primary">Search Cars</button>
+            </form>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
 
-            <button type="submit">Send Message</button>
-        </form>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
     </section>
 
-    <section id="signin">
-        <h2>Sign In</h2>
-        <form>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+    <section id="signin" class="signin-section">
+        <div class="container">
+            <h2>Sign In</h2>
+            <form>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
 
-            <button type="submit">Sign In</button>
-        </form>
+                <button type="submit" class="btn-primary">Sign In</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Car Rental Service. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 LuxDrive. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>

@@ -129,6 +129,7 @@ form {
     background-color: #1E2A38;
     padding: 50px 0;
     text-align: center;
+    color: #FFFFFF;
 }
 
 .contact-section h2 {
@@ -184,10 +185,12 @@ form {
 
 .car-grid img {
     width: 100%;
-    height: auto;
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Footer */
 footer {
